@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+:root {
+    --primary: #002536;
+    --secondary: #3AA43B;
+    --aksen: hsl(149, 61%, 48%);
+    --fontMain: 'Gasoek One', sans-serif;
+    --secFont: 'Open Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--secFont);
+}
+
+.bg-secondary {
+    background: var(--aksen) !important;
+}
+
+.display {
+    font-family: var(--fontMain);
+}
+
+.textPrimary {
+    color: var(--primary);
+}
+
+.hero {
+    background-image: url("/assets/img/bg/bg1.jpg");
+    background-size: cover;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media only screen and (max-width:600px) {
+    .leafAbsolute {
+        z-index: -1 !important;
+        width: 100px !important;
+    }
+
+    .floatimgAtas {
+        top: 40px !important;
+        right: 0 !important;
+    }
+
+    .floatImgbawah {
+        bottom: -30px !important;
+        left: -20px !important;
+    }
+}
