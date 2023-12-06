@@ -31,7 +31,9 @@
 .textPrimary {
     color: var(--primary);
 }
-
+.textSecond{
+    color: var(--aksen);
+}
 .hero {
     background-image: url("/assets/img/bg/bg1.jpg");
     background-size: cover;
@@ -46,6 +48,10 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.card.glass{ 
+    /* padding-top: 20px; */
+    border: 1px solid var(--aksen);
+}
 @media only screen and (max-width:600px) {
     .leafAbsolute {
         z-index: -1 !important;
