@@ -15,6 +15,8 @@
     padding: 0;
     margin: 0;
     font-family: var(--secFont);
+    z-index: 0;
+    color: var(--primary);
 }
 
 .bg-aksen {
@@ -40,17 +42,15 @@
 }
 
 .glass {
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(172, 172, 172, 0.37);
+    background: rgba(255, 255, 255, 0.25);  
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .card.glass{ 
     /* padding-top: 20px; */
-    border: 1px solid var(--aksen);
+    /* border: 1px solid var(--aksen); */
 }
 @media only screen and (max-width:600px) {
     .leafAbsolute {
@@ -66,5 +66,10 @@
     .floatImgbawah {
         bottom: -30px !important;
         left: -20px !important;
+    }
+    .imgDaunkwr{
+        bottom: 30vh!important;
+        right: 10px!important;
+        z-index: -1!important;
     }
 }
